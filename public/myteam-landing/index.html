@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Team Landing Page</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="./about/style.css">
+  <link rel="stylesheet" href="./contact/contact.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+
+<body>
+  <!-- HEADER SECTION START -->
+  <section class="top-wrapper">
+    <div class="container header-container">
+      <header class="header">
+        <nav class="nav-bar">
+          <div class="logo">
+            <h1>
+              <a href="#">
+                <img src="./images/myteam-logo.svg" alt="My Team Logo">
+              </a>
+            </h1>
+          </div>
+          <ul class="nav-list">
+            <li class="nav-item"><a href="#" class="nav-link">home</a></li>
+            <li class="nav-item"><a href="./about/about.html" class="nav-link">about</a></li>
+            <li class="nav-item"><a href="./contact/contact.html" class="btn contact-toggle">contact us</a></li>
+          </ul>
+        </nav>
+        <a href="./contact/contact.html" class="btn contact-btn">contact us</a>
+        <!-- Burger icon -->
+        <div class="burger" id="burger">&#9776;</div>
+      </header>
+
+      <!-- HERO SECTION START -->
+      <section class="hero-section">
+        <div class="hero-contents">
+          <div class="hero-text__left">
+            <h2>Find the best <span>talent</span></h2>
+          </div>
+          <div class="hero-text__right">
+            <div class="rectangle"></div>
+            <p>Finding the right people and building high performing teams can be hard. Most companies aren’t tapping
+              into the abundance of global talent. We’re about to change that.</p>
+          </div>
+        </div>
+      </section>
+      <!-- HERO SECTION END -->
+
+      <!-- ABOUT SECTION START -->
+      <section class="about-section">
+        <div class="container">
+          <div class="about-contents">
+            <div class="about-text__left">
+              <h2>About</h2>
+            </div>
+            <div class="about-text__right">
+              <div class="rectangle"></div>
+              <p>We help companies build dynamic teams made up of top global talent. Using our network of passionate
+                professionals we drive innovation and deliver incredible outcomes. Talented, diverse teams shape the
+                best products and experiences. We’ll bring those teams to you.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ABOUT SECTION END -->
+    </div>
+  </section>
+  <!-- HEADER SECTION END -->
+
+  <!-- MAIN CONTENTS START -->
+  <main class="main">
+      <!-- TEAM SECTION START -->
+    <section class="team-section">
+      <div class="container">
+        <div class="team-contents">
+          <h2 class="section-title">Meet the directors</h2>
+          <div class="team-grid">
+
+            <!-- Team Card 1  -->
+            <div class="team-card" data-id="1">
+              <img src="./images/nikita.png" alt="Nikita Marks" class="avatar">
+              <h4>Nikita Marks</h4>
+              <small>Founder & CEO</small>
+              <button class="toggle-btn">
+                <div class="line vertical"></div>
+                <div class="line horizontal"></div>
+              </button>
+            </div>
+
+            <!-- Team Card 2  -->
+            <div class="team-card" data-id="2">
+              <img src="./images/cristian.png" alt="Cristian Duncan" class="avatar">
+              <h4>Cristian Duncan</h4>
+              <small>Co-founder & COO</small>
+              <button class="toggle-btn">
+                <div class="line vertical"></div>
+                <div class="line horizontal"></div>
+              </button>
+            </div>
+
+            <!-- Team Card 3  -->
+            <div class="team-card" data-id="3">
+              <img src="./images/cruz.png" alt="Cruz Hamer" class="avatar">
+              <h4>Cruz Hamer</h4>
+              <small>Co-founder & CTO</small>
+              <button class="toggle-btn">
+                <div class="line vertical"></div>
+                <div class="line horizontal"></div>
+              </button>
+            </div>
+
+            <!-- Team Card 4  -->
+            <div class="team-card" data-id="4">
+              <img src="./images/drake.png" alt="Drake Heaton" class="avatar">
+              <h4>Drake Heaton</h4>
+              <small>Business Development Lead</small>
+              <button class="toggle-btn">
+                <div class="line vertical"></div>
+                <div class="line horizontal"></div>
+              </button>
+            </div>
+
+            <!-- Team Card 5  -->
+            <div class="team-card" data-id="5">
+              <img src="./images/griffin.png" alt="Griffin Wise" class="avatar">
+              <h4>Griffin Wise</h4>
+              <small>Lead Marketing</small>
+              <button class="toggle-btn">
+                <div class="line vertical"></div>
+                <div class="line horizontal"></div>
+              </button>
+            </div>
+
+            <!-- Team Card 6 (expanded with social links)  -->
+            <div class="team-card expanded" data-id="6">
+              <h3>Aden Allan</h3>
+              <p class="quote">“Empowered teams create truly amazing products. Set the north star and let them follow
+                it.”</p>
+              <div class="socials">
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+              </div>
+              <button class="toggle-btn close">
+                <div class="line vertical"></div>
+                <div class="line horizontal"></div>
+              </button>
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CLIENTS SECTION START -->
+    <section class="clients-section">
+      <div class="container">
+        <div class="clients-contents">
+          <h2>Some of our clients</h2>
+          <div class="clients-logos">
+            <img src="../images/the-verge.svg" alt="">
+            <img src="../images/the-jakarta-post.svg" alt="">
+            <img src="../images/the-guardian.svg" alt="">
+            <img src="../images/techradar.svg" alt="">
+            <img src="../images/gadgets-now.svg" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- FEATURES SECTION START -->
+    <section class="features-section">
+      <div class="container">
+        <div class="features-content">
+          <div class="left">
+            <div class="rectangle"></div>
+            <h2>
+              Build & manage
+              distributed teams
+              like no one else.
+            </h2>
+          </div>
+          <div class="right">
+            <div class="feature-item">
+              <div class="circle-box">
+                <div class="circle"></div>
+                <img src="images/Combined-Shape1.svg" alt="person icon" />
+              </div>
+              <div>
+                <h3>Experienced Individuals</h3>
+                <p>
+                  Our network is made up of highly experienced professionals who are passionate about what they do.
+                </p>
+              </div>
+            </div>
+            <div class="feature-item">
+              <div class="circle-box">
+                <div class="circle"></div>
+                <img src="images/Combined-Shape2.svg" alt="person icon" />
+              </div>
+              <div>
+                <h3>Easy to Implement</h3>
+                <p>
+                  Our processes have been refined over years of implementation meaning our teams always deliver.
+                </p>
+              </div>
+            </div>
+            <div class="feature-item">
+
+              <div class="circle-box">
+                <div class="circle"></div>
+                <img src="images/Combined-Shape3.svg" alt="person icon" />
+              </div>
+              <div>
+                <h3>Enhanced Productivity</h3>
+                <p>
+                  Our customized platform with in-built analytics helps you manage your distributed teams.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- FEATURES SECTION END -->
+
+    <!-- TESTIMONIALS -->
+     <section class="testimonial-section">
+      <div class="container">
+        <div class="testimonial-contents">
+          <div class="testimonial-title">
+            <h4>Delivering real results for top companies. Some of our <span>success stories.</span></h4>
+          </div>
+          <div class="testimonial-items">
+            <div class="testimonial">
+              <img src="./images/icon-quotes.svg" class="icon-quotes" alt="ICONS QUOTES">
+              <p> “The team perfectly fit  the specialized skill set required. They focused on the most essential features helping us launch the platform eight months faster than planned.”</p>
+              <h4>Kady Baker</h4>
+              <small>Product Manager at Bookmark</small>
+              <img src="./images/kady.png" class="user-image" alt="">
+            </div>
+             <div class="testimonial">
+              <img src="./images/icon-quotes.svg" class="icon-quotes" alt="ICONS QUOTES">
+              <p>“We needed to automate our entire onboarding process. The team came in and built out the whole journey. Since going live, user retention has gone through the roof!”</p>
+              <h4>Aiysha Reese</h4>
+              <small>Founder of Manage</small>
+              <img src="./images/aisha.png" class="user-image" alt="">
+            </div>
+             <div class="testimonial">
+              <img src="./images/icon-quotes.svg" class="icon-quotes" alt="ICONS QUOTES">
+              <p>“Amazing. Our team helped us build an app that delivered a new experience for hiring a physio. The launch was an instant success with 100k downloads in the first month.”</p>
+              <h4>Arthur Clarke</h4>
+              <small>Co-founder of MyPhysio</small>
+              <img src="./images/arthur.png" class="user-image" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+     </section>
+
+     
+     
+     <!-- CTA -->
+      <section class="cta-section">
+        <div class="container">
+          <div class="cta-contents">
+            <h2>Ready to get started?</h2>
+            <a href="./contact/contact.html" class="btn contact-btn cta-btn">contact us</a>
+          </div>
+        </div>
+      </section>
+  </main>
+
+  <!-- FOOTER -->
+   <footer class="footer">
+    <div class="container">
+      <div class="footer-contents">
+        <div class="footer-left">
+          <nav class="nav-bar">
+          <div class="logo">
+            <h1>
+              <a href="#">
+                <img src="./images/myteam-logo.svg" alt="My Team Logo">
+              </a>
+            </h1>
+          </div>
+          <ul class="footer-nav__list">
+            <li class="nav-item"><a href="./index.html" class="nav-link">home</a></li>
+            <li class="nav-item"><a href="./about/about.html" class="nav-link">about</a></li>
+          </ul>
+        </nav>
+        <div class="footer-middle">
+         <p>
+          987 Hillcrest Lane <br>
+          Irvine, CA <br>
+          California 92714 <br>
+          Call Us : 949-833-7432
+         </p>
+       </div>
+      </div>
+      
+      <div class="footer-right">
+        <div class="socials">
+          <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+          <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+          <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        </div>
+        <p>Copyright 2020. All Rights Reserved</p>
+      </div>
+      </div>
+    </div>
+   </footer>
+
+
+
+
+
+
+
+
+  <script src="script.js"></script>
+  <script src="./about/script.js"></script>
+  <script src="./contact/script.js"></script>
+</body>
+
+</html>

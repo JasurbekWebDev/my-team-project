@@ -1,0 +1,202 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.contact-section {
+  padding: 124px 0;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 32px;
+}
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 16px;
+}
+.contact-info h2 {
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 100px;
+  letter-spacing: 0px;
+  color: #ffffff;
+}
+
+.us-about h4 {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 48px;
+  letter-spacing: 0px;
+  color: #f67e7e;
+  padding-bottom: 8px;
+
+}
+.us-about  {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+
+}
+.us-about .feature-item div{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: start;
+  position: relative;
+  
+}
+.us-about .feature-item .circle-box {
+  position: relative;
+  width: 100%;
+}
+.us-about .feature-item .circle-box img {
+  position: absolute;
+  left: -16px;
+}
+.us-about .feature-item .circle-box p {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: 0px;
+
+}
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 32px;
+}
+
+.input-group {
+  width: 100%;
+  position: relative;
+  border-bottom: 1px solid white;
+}
+
+.input-group.error {
+  border-bottom: 1px solid #c88b79;
+}
+
+.input-group input,
+.input-group textarea {
+  width: 100%;
+  padding: 0 0 17px 14px;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: #ffffff;
+  background-color: transparent;
+  transition: background-color 5000s ease-in-out 0s; /* Autofill fonini o'chirish */
+}
+
+/* Autofill uchun barcha holatlar */
+.input-group input:-webkit-autofill,
+.input-group input:-webkit-autofill:hover,
+.input-group input:-webkit-autofill:focus,
+.input-group input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 30px transparent inset !important;
+  -webkit-text-fill-color: #ffffff !important;
+  background-color: transparent !important;
+  background-image: none !important;
+  color: #ffffff !important;
+  /* opacity: 0.8 !important; */
+}
+
+/* Firefox va boshqa brauzerlar uchun */
+.input-group input[autocomplete="on"],
+.input-group input[autocomplete="on"]:hover,
+.input-group input[autocomplete="on"]:focus {
+  background-color: transparent !important;
+}
+
+/* Input qiymati mavjud bo'lganda fonni nazorat qilish */
+.input-group input:not(:placeholder-shown),
+.input-group textarea:not(:placeholder-shown) {
+  background-color: transparent;
+}
+
+/* Placeholder stilizatsiyasi */
+.input-group input.error::placeholder,
+.input-group textarea.error::placeholder {
+  color: #c88b79;
+  opacity: 60%;
+}
+
+.input-group input::placeholder,
+.input-group textarea::placeholder {
+  color: #ffffff;
+  opacity: 60%;
+}
+
+.submit-btn {
+  background-color: #ffffff;
+  color: #004047;
+  padding: 12px 30px;
+  border: 2px solid #ffffff;
+  border-radius: 24px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.submit-btn:hover {
+  background-color: #79c8c7;
+  color: #002529;
+  border-color: #79c8c7;
+}
+
+#successMessage {
+  text-align: center;
+  color: #41e678;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  display: none;
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #393b3b56;
+  width: 100%;
+  padding: 10px 0;
+  z-index: 1000;
+}
+
+.hidden {
+  display: none;
+}
+
+.error-message {
+  color: #f67e7e;
+  font-size: 12px;
+  display: block;
+  margin-top: 8px;
+  position: absolute;
+
+}
+
+@media (max-width: 768px) {
+  .contact-grid {
+    grid-template-columns: 1fr;
+    justify-content: center;
+    gap: 64px;
+  }
+  .contact-info {
+    align-items: center;
+  }
+  .us-about h4 {
+    text-align: center;
+  }
+  .us-about .feature-item .circle-box p {
+    font-size: 12px;
+    text-align: justify;
+    font-weight: 400;
+  }
+}

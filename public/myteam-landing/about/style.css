@@ -1,0 +1,301 @@
+.about-section {
+  padding: 120px 0;
+}
+.about-contents {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+.about-text__left {
+  width: 350px;
+}
+.about-text__left h2{
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 100px;
+  letter-spacing: 0px;
+  color: #ffffff;
+}
+.about-text__right {
+  width: 730px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.about-text__right .rectangle {
+  background-color: #f67e7e;
+}
+.about-text__right p {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: 0px;
+  color: #ffffff;
+}
+
+
+.team-section {
+  background-color: #004047;
+  padding: 140px 0;
+}
+.team-contents {
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+}
+.team-contents .section-title {
+  text-align: center;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 48px;
+  letter-spacing: 0px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+
+.team-card {
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #012f34;
+  padding: 32px 24px 56px;
+  position: relative;
+}
+
+.team-card img.avatar {
+  width: 96px;
+  height: 96px;
+  border-radius: 50%;
+  border: 2px solid #c4fffe;
+}
+
+.team-card h4 {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: 0px;
+  text-align: center;
+  color: #79c8c7;
+  padding-top: 16px;
+}
+
+.team-card small {
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 25px;
+  letter-spacing: 0px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.toggle-btn {
+  position: absolute;
+  width: 56px;
+  height: 56px;
+  background-color: #f67e7e;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  bottom: -28px;
+}
+
+.toggle-btn .line {
+  position: absolute;
+  width: 16px;
+  height: 4px;
+  background-color: #012f34;
+  transition: transform 0.2s ease;
+}
+
+/* Default: + */
+.toggle-btn .vertical {
+  transform: rotate(0deg);
+}
+
+.toggle-btn .horizontal {
+  transform: rotate(90deg);
+}
+.toggle-btn.active {
+  background-color: #79c8c7;
+}
+/* When active (x) */
+.toggle-btn.active .vertical {
+  transform: rotate(45deg);
+}
+
+.toggle-btn.active .horizontal {
+  transform: rotate(-45deg);
+}
+
+.toggle-btn__bgColor {
+  background-color: #79c8c7;
+}
+
+.expanded h3 {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: 0px;
+  text-align: center;
+  color: #79c8c7;
+}
+.expanded .quote {
+  padding: 8px 24px;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 25px;
+  letter-spacing: 0px;
+  text-align: center;
+  color: #ffffff;
+}
+.expanded .socials {
+  padding-top: 24px;
+}
+.socials a i {
+  width: 20px;
+  height: 20px;
+}
+.clients-section {
+  background-color: #012f34;
+  padding: 140px 0;
+}
+.clients-contents {
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+  
+}
+.clients-contents h2 {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 48px;
+  letter-spacing: 0px;
+  text-align: center;
+  color: #ffffff;
+}
+.clients-logos {
+  display: flex;
+  justify-content: space-between;
+  
+}
+.clients-logos img {
+  width: 165px;
+}
+@media (max-width: 980px) {
+  .clients-logos img {
+  width: 110px;
+}
+}
+@media (max-width: 768px) {
+  .clients-contents h2 {
+    font-size: 32px;
+    line-height: 32px;
+  }
+  .clients-logos img {
+    width: 70px;
+  }
+  .about-contents {
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+  }
+  .about-text__left h2 {
+    text-align: center;
+  }
+  .about-text__right {
+    padding: 0 110px;
+    width: 100%;
+    text-align: center;
+    
+  }
+  .about-text__right .rectangle {
+    display: none;
+  }
+  .team-grid {
+    grid-template-columns: repeat(2, 1fr);
+    
+    grid-gap: 57px 11px;
+  }
+   .team-card:nth-child(5) {
+    order: 6; /* 5-chi kartani oxiriga yuboramiz */
+  }
+
+  .team-card:nth-child(6) {
+    order: 5; /* 6-chi kartani oldinga olib kelamiz */
+  }
+  
+  .team-section {
+    padding: 100px 50px;
+  }
+  .team-contents {
+    gap: 48px;
+  }
+  .team-contents h2 {
+    font-size: 32px;
+    line-height: 32;
+  }
+  .team-card {
+    max-width: 350px;
+  }
+ 
+@media (max-width: 480px) {
+  .team-card:nth-child(5) {
+    order: 5;
+  }
+  .about .container {
+    padding: 0;
+  }
+  .team-grid {
+    grid-template-columns: 1fr;
+  }
+  .about-section {
+    padding: 80px 0px 108px 0px;
+  }
+  .about-contents {
+    gap: 16px;
+    width: 100%;
+  }
+  .about-text__left h2 {
+    font-size: 40px;
+    line-height: 40px;
+  }
+  .about-text__right {
+    padding: 0;
+  }
+  .team-section {
+    padding: 88px 0;
+  }
+  .team-contents .section-title {
+    font-size: 32px;
+    line-height: 32px;
+  }
+  .header {
+   padding: 48px 24px 0;
+    
+  }
+  .clients-logos {
+    flex-direction: column;
+    align-items: center;
+    gap: 70px;
+  }
+  .clients-section {
+    padding: 88px 0;
+  }
+  .clients-contents h2 {
+    width: 327px;
+  }
+
+
+ 
+}}
